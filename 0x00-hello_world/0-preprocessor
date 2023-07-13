@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E 0-main.c | sed 's/^\s*//' | betty-style --no-tabs > c
+gcc -E "$CFILE" | sed 's/^\s*//' | betty-style --no-tabs > c
