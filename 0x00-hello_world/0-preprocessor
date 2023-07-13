@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E "$CFILE" | sed 's/^\s*//' | betty-style --no-tabs > c
+gcc -E "$CFILE" > c
