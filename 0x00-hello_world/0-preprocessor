@@ -1,5 +1,2 @@
 #!/bin/bash
-
-CFILE="my_c_file.c"
-OUTPUT_FILE="c"
-cpp "$CFILE" | sed 's/^\s*//' | betty-style > "$OUTPUT_FILE"
+gcc -E " main.c | sed 's/^\s*//' | betty-style --no-tabs > c
