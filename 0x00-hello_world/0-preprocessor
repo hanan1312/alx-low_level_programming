@@ -1,0 +1,5 @@
+#!/bin/bash
+
+CFILE="my_c_file.c"
+OUTPUT_FILE="c"
+cpp "$CFILE" | sed 's/^\s*//' | betty-style > "$OUTPUT_FILE"
