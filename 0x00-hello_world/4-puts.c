@@ -1,7 +1,8 @@
 #include <stdio.h>
- * Prints the message "Programming is like building a multilingual puzzle" to the console.
+ /*
+ * main function to return a statement
  * Return:
- *   0
+ *   None
  */
 int main(void)
  {
