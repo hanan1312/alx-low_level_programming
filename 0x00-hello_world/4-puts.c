@@ -1,10 +1,11 @@
 #include <stdio.h>
- /*
- * main function to return a statement
- * Return:
- *   None
- */
+ /**
+*main - Entry point
+*Description: 'print string'
+*Return: Always 0 (Success)
+*/
 int main(void)
- {
-    puts("Programming is like building a multilingual puzzle");
-    return 0;}
+{
+    puts("\"Programming is like building a multilingual puzzle");
+    return 0;
+}
