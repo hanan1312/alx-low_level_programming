@@ -1,10 +1,11 @@
 #include <stdio.h>
- /*
- * main function to return a statement
- * Return:
- *   None
- */
+/**
+*main - Entry point
+*Description: 'print string'
+*Return: Always 0 (Success)
+*/
 int main(void)
- {
-    printf("With proper grammar, but the outcome is a piece of art,\n");
-    return 0;}
+{
+	printf("With proper grammar, but the outcome is a piece of art,\n");
+	return (0);
+}
