@@ -6,14 +6,14 @@
 */
 int main(void)
 {
-	char letter = 'a';
-	int count = 0;
-
-	while (count < 26)
+	char c;
+	for (c = 'a'; c <= 'z'; c++)
 {
-		putchar(letter);
-		letter++;
-		count++;
+	putchar(c);
+}
+	for (c = 'A'; c <= 'Z'; c++)
+{
+	putchar
 }
 	putchar('\n');
 	return (0);
