@@ -21,7 +21,7 @@ int main(void)
 	k = j / 10;
 	l = j % 10;
 	putchar(' ');
-	putchar(k + '0')
+	putchar(k + '0');
 	putchar(l + '0');
 	if (i != 99 || j != 99)
 {
