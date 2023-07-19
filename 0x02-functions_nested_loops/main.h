@@ -130,3 +130,29 @@ int print_last_digit(int j)
 	_putchar('0' + abs(j));
 	return (abs(j));
 }
+/**
+*jack_bauer - helper function
+*Description: 'print string'
+*Return: Always 0 (Success)
+*/
+void jack_bauer(void)
+{
+	int i = 0;
+	int j;
+
+	while (i < 24 )
+	{
+		for (j = 0; j < 60; j++)
+		{
+			_putchar('0' + (i / 10));
+           		_putchar('0' + (i % 10));
+           		_putchar(':');
+           		_putchar('0' + (j / 10));
+           		_putchar('0' + (j % 10));
+           		_putchar('\n');
+		}
+
+	}
+	i++;
+	return;
+}
