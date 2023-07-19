@@ -34,7 +34,7 @@ int i = 0;
 while (i < 10)
 {
 print_alphabet();
-i++
+i++;
 }
 _putchar('\n');
 return;
