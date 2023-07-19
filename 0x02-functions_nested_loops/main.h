@@ -128,5 +128,5 @@ int print_last_digit(int n)
 {
 	n = abs(n) % 10;
 	_putchar('0' + n);
-	return (abs(n) % 10);
+	return (abs(n));
 }
