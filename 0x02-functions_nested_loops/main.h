@@ -155,3 +155,14 @@ void jack_bauer(void)
 	}
 	return;
 }
+/**
+*add - helper function
+*Description: 'print string'
+*@a: input first number
+*@b: input second number
+*Return: Always 0 (Success)
+*/
+int add(int a, int b)
+{
+	return (a + b);
+}
