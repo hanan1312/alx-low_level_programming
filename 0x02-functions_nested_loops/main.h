@@ -124,9 +124,9 @@ int _abs(int j)
 *@n: input number
 *Return: Always 0 (Success)
 */
-int print_last_digit(int n)
+int print_last_digit(int j)
 {
-	n = abs(n) % 10;
-	_putchar('0' + abs(n));
-	return (abs(n));
+	n = abs(j) % 10;
+	_putchar('0' + abs(j));
+	return (abs(j));
 }
