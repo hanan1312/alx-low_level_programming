@@ -59,3 +59,24 @@ else
 }
 return (j);
 }
+/**
+*_isalpha - helper function
+*Description: 'print string'
+*@c: input charecter to be checked
+*@out: output to be saved
+*Return: Always 0 (Success)
+*/
+int _isalpha(char c)
+{
+int j;
+
+if (isalpha(c))
+{
+	j = 1;
+}
+else
+{
+	j = 0;
+}
+return (j);
+}
