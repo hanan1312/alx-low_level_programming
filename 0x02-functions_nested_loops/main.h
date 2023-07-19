@@ -36,6 +36,5 @@ while (i < 10)
 print_alphabet();
 i++;
 }
-_putchar('\n');
 return;
 }
