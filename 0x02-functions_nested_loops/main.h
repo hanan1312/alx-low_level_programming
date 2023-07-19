@@ -126,7 +126,7 @@ int _abs(int j)
 */
 int print_last_digit(int j)
 {
-	n = abs(j) % 10;
-	_putchar('0' + abs(n));
-	return (abs(n));
+	j = abs(j) % 10;
+	_putchar('0' + abs(j));
+	return (abs(j));
 }
