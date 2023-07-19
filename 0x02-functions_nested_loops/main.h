@@ -80,3 +80,31 @@ else
 }
 return (j);
 }
+/**
+*print_sign - helper function
+*Description: 'print string'
+*@n: input number
+*@out: output to be saved
+*Return: Always 0 (Success)
+*/
+int print_sign(int n)
+{
+	int j;
+
+if (no > 0)
+{
+	_putchar('+');
+	j = 1;
+}
+else if (no < 0)
+{
+	_putchar('-');
+	j = -1; 
+}
+else
+{
+	_putchar('0');
+	j = 0;
+}
+	return (j);
+}
