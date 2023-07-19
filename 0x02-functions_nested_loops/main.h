@@ -166,3 +166,25 @@ int add(int a, int b)
 {
 	return (a + b);
 }
+/**
+*print_to_98 - helper function
+*Description: 'print string'
+*@n: input number
+*@i: integer for thw while loop
+*Return: Always 0 (Success)
+*/
+void print_to_98(int n)
+{
+	if (n >= 98)
+	{
+		while (n > 98)
+			_putchar("%d, ", n--);
+		_putchar("%d\n", n);
+	}
+
+	else
+	{
+		while (n < 98)
+			_putchar("%d, ", n++);
+		_putchar("%d\n", n);
+
