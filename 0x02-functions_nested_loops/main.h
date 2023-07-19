@@ -108,3 +108,13 @@ else
 }
 	return (j);
 }
+/**
+*_abs - helper function
+*Description: 'print string'
+*@n: input number
+*Return: Always 0 (Success)
+*/
+int _abs(int j)
+{
+	return (abs(j));
+}
