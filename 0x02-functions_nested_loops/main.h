@@ -38,3 +38,24 @@ i++;
 }
 return;
 }
+/**
+*_islower - helper function
+*Description: 'print string'
+*@c: input charecter to be checked
+*@out: output to be saved
+*Return: Always 0 (Success)
+*/
+int _islower(char c)
+{
+int j;
+
+if (islower(c))
+{
+	j = 1;
+}
+else
+{
+	j = 0;
+}
+return (j);
+}
