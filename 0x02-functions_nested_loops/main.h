@@ -175,32 +175,13 @@ int add(int a, int b)
 */
 void print_to_98(int n)
 {
-	if (n >= 98)
+	for(int i = 0; i < 98 ; i++)
 	{
-		while (n > 98)
-		{
-			_putchar('0' + n--);
-			_putchar(',');
-           		_putchar(' ');
-		}
-		_putchar('0' + n);
-		_putchar(',');
+   		_putchar((i/10)+'0');
+    		_putchar((i%10)+'0');
 		_putchar(' ');
-		_putchar('\n');
-	}
-
-	else
-	{
-		while (n < 98)
-		{
-			_putchar('0' + n++);
-			_putchar(',');
-                        _putchar(' ');
-		}
-		_putchar('0' + n);
 		_putchar(',');
-		_putchar(' ');
-		_putchar('\n');
+    		_putchar('\n');
 	}
 	return;
 }
