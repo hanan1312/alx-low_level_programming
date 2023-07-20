@@ -168,22 +168,24 @@ int add(int a, int b)
 }
 /**
 *print_to_98 - helper function
-*Description: 'print string'
-*@n: input number
+*Description: 'print string'*@n: input number
 *@i: integer for thw while loop
 *Return: Always 0 (Success)
 */
-void print_to_98(int n)
+void print_to_98(int no)
 {
-	int i;
+	int d1, d2, n = 0;
 
-	for(i = n; i < 99 ; i++)
-        {
-		_putchar(',');
+    for (d1 = no; d1 <= '9'; d1++) {
+        for (d2 = d1 + 1; d2 <= '9'; d2++, n++) {
+            if (n > 0) {
+                _putchar(',');
                 _putchar(' ');
-                _putchar((i/10)+'0');
-                _putchar((i%10)+'0');
+            }
+            _putchar(d1);
+            _putchar(d2);
         }
-        _putchar('\n');
-        return;
+    }
+    _putchar('\n');
+    return;
 }
