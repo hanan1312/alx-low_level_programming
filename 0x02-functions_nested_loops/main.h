@@ -179,10 +179,10 @@ void print_to_98(int n)
 
 	for(i = n; i < 99 ; i++)
         {
+		_putchar(',');
+                _putchar(' ');
                 _putchar((i/10)+'0');
                 _putchar((i%10)+'0');
-                _putchar(',');
-                _putchar(' ');
         }
         _putchar('\n');
         return;
