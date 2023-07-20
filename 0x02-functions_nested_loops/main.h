@@ -175,7 +175,9 @@ int add(int a, int b)
 */
 void print_to_98(int n)
 {
-	for(int i = 0; i < 98 ; i++)
+	int i;
+	
+	for(i = 0; i < 98 ; i++)
 	{
    		_putchar((i/10)+'0');
     		_putchar((i%10)+'0');
