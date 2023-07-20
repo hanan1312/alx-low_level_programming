@@ -172,20 +172,24 @@ int add(int a, int b)
 *@i: integer for thw while loop
 *Return: Always 0 (Success)
 */
-void print_to_98(int no)
+void print_to_98(int n)
 {
-	int d1, d2, n = 0;
+        int i, j;
 
-    for (d1 = no; d1 <= '9'; d1++) {
-        for (d2 = d1 + 1; d2 <= '9'; d2++, n++) {
-            if (n > 0) {
-                _putchar(',');
-                _putchar(' ');
-            }
-            _putchar(d1);
-            _putchar(d2);
-        }
-    }
-    _putchar('\n');
-    return;
+	for (i = n; i < 9; i++)
+{
+	for (j = i + 1; j <= 9; j++)
+{
+	int num = (i * 10) + j;
+	_putchar((num / 10) + '0');
+	_putchar((num % 10) + '0');
+	if (i != 8 || j != 9)
+{
+	_putchar(',');
+	_putchar(' ');
+ }
+ }
+ }
+	_putchar('\n');
+        return;
 }
