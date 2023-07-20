@@ -175,13 +175,13 @@ int add(int a, int b)
 */
 void print_to_98(int i)
 {
-	for(i = 0; i < 98 ; i++)
+	for(i = 0; i < 99 ; i++)
 	{
    		_putchar((i/10)+'0');
     		_putchar((i%10)+'0');
-		_putchar(' ');
 		_putchar(',');
-    		_putchar('\n');
+		_putchar(' ');
 	}
+	_putchar('\n');
 	return;
 }
