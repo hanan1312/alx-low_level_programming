@@ -173,10 +173,8 @@ int add(int a, int b)
 *@i: integer for thw while loop
 *Return: Always 0 (Success)
 */
-void print_to_98(int n)
+void print_to_98(int i)
 {
-	int i;
-	
 	for(i = 0; i < 98 ; i++)
 	{
    		_putchar((i/10)+'0');
