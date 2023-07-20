@@ -167,6 +167,111 @@ int add(int a, int b)
 	return (a + b);
 }
 /**
+*print_times_table - helper function
+*Description: 'print string'
+*@n: the input number
+*Return: Always 0 (Success)
+*/
+void print_times_table(int n)
+{
+	if (n >= 0 && n <= 15)
+	{
+		int i;
+		int j;
+
+		for (i = 0; i <= n; i++)
+		{
+            if (n > 0)
+            {
+                _putchar('0');
+			    _putchar(',');    
+            }
+            else
+            {
+			    _putchar('0');
+            }
+			for (j = 1; j <= n; j++)
+			{
+				if (i * j < 10)
+				{
+					if (j < n)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+						_putchar('0' + (i * j));
+						_putchar(',');   
+					}
+					else
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+						_putchar('0' + (i * j));
+					}
+				}
+				else if (i * j < 100)
+				{
+					if (j < n)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar('0' + (i * j) / 10);
+						_putchar('0' + (i * j) % 10);
+						_putchar(',');
+					}
+					else if (i < 2 && j != n)
+					{
+						_putchar(' ');
+						_putchar('0' + (i * j) / 10);
+						_putchar('0' + (i * j) % 10);
+					}
+                    else if (i < 2 && j == n)
+                    {
+                        _putchar(' ');
+                        _putchar(' ');
+						_putchar('0' + (i * j) / 10);
+						_putchar('0' + (i * j) % 10);
+                    }
+                    else
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar('0' + (i * j) / 10);
+						_putchar('0' + (i * j) % 10);
+					}
+				}
+				else
+				{
+					if (j < n)
+					{
+						_putchar(' ');
+						_putchar('0' + (i * j) / 100);
+						_putchar('0' + (i * j) % 100 / 10);
+						_putchar('0' + (i * j)%100 % 10);
+						_putchar(',');
+					}
+					else if (i < 2)
+					{
+						_putchar('0' + (i * j) / 100);
+						_putchar('0' + (i * j) % 100 / 10);
+						_putchar('0' + (i * j)%100 % 10);
+					}
+					else
+					{
+						_putchar(' ');
+						_putchar('0' + (i * j) / 100);
+						_putchar('0' + (i * j) % 100 / 10);
+						_putchar('0' + (i * j)%100 % 10);
+					}
+				}
+			}
+			_putchar('\n');
+		}
+	}
+    return;
+}
+/**
 *print_to_98 - helper function
 *Description: 'print string'*@n: input number
 *@i: integer for thw while loop
