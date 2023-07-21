@@ -1,4 +1,6 @@
 #include "main.h
+
+int _putchar(char c);
 /**
 *print_line - helper function
 *Description: 'print string'
