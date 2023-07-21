@@ -1,6 +1,6 @@
 #include <ctype.h>
 /**
-*_isupper - helper function
+*_isdigit - helper function
 *Description: 'print string'
 *@c: input charecter
 *Return: Always 0 (Success)
