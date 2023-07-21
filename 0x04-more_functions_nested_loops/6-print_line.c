@@ -7,6 +7,8 @@
 *@n: input number of times _ will be printed
 *Return: Always 0 (Success)
 */
+int _putchar(char c);
+
 void print_line(int n)
 {
 int j;
