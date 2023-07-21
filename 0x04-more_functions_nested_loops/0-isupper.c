@@ -1,5 +1,4 @@
 #include <ctype.h>
-#include <stdio.h>
 /**
 *_isupper - helper function
 *Description: 'print string'
@@ -8,15 +7,15 @@
 */
 int _isupper(int c)
 {
-	int i;
+int out;
 
-	if(isupper(c))
-	{
-		int i = 1;
-	}
-	else
-	{
-		int i = 0;
-	}
-	return (i);
+if (isupper(c))
+{
+out = 1;
+}
+else
+{
+out = 0;
+}
+return (out);
 }
