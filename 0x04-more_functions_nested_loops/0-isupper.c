@@ -7,15 +7,15 @@
 */
 int _isupper(int c)
 {
-int out;
+	int i;
 
-if (isupper(c))
-{
-out = 1;
-}
-else
-{
-out = 0;
-}
-return (out);
+	if (isupper(c))
+	{
+		i = 1;
+	}
+	else
+	{
+		i = 0;
+	}
+	return (i);
 }
