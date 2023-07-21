@@ -1,6 +1,5 @@
 #include "main.h
 
-int _putchar(char c);
 /**
 *print_line - helper function
 *Description: 'print string'
@@ -9,15 +8,15 @@ int _putchar(char c);
 */
 void print_line(int n)
 {
-	if (n > 0)
-	{
-		int i;
+int j;
 
-		for (i = 0; i < n; i++)
-		{
-			_putchar('_');
-		}		
-	}
-	_putchar('\n');
-	return;
+if (n > 0)
+{
+for (j = 0; j < n; ++j)
+{
+_putchar('_');
+}
+}
+_putchar('\n');
+return;
 }
