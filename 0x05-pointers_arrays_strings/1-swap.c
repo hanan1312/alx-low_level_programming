@@ -4,8 +4,8 @@
 /**
  * int swap - check the code
  *
- * input_1: a
- * input_2: b
+ * @a:input_1
+ * @b:input_2
  * Return: Always 0.
  */
 void swap_int(int *a, int *b)
