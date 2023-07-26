@@ -2,9 +2,8 @@
 #include <ctype.h>
 /**
  * cap_string - capitalizes everey word of a string
- * @s: string to modify
- *
- * Return: the resulting string
+ * @str: input
+ * Return: Always 0.
  */
 char *cap_string(char *s)
 {
