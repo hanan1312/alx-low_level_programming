@@ -2,10 +2,10 @@
 /**
  * _strspn - function that sets the value of a pointer to a char.
  * @s: target location
- * @accept: value
+ * @to_str: string to set
  * Return: charecter.
  */
-void set_string(char **s, char *to)
+void set_string(char **s, char *to_str)
 {
-	*s = to;
+	*s = to_str;
 }
