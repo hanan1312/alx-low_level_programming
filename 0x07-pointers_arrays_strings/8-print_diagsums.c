@@ -11,7 +11,7 @@ void print_diagsums(int *a, int size)
 {
 	int i;
 
-	unsigned int sudiag_1, diag_2;
+	unsigned int diag_1, diag_2;
 
 	diag_1 = 0;
 	diag_2 =  0;
