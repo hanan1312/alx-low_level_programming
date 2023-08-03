@@ -1,5 +1,5 @@
 /**
- * helper_fn - check the code
+ * aid_func - check the code
  * @n: input number
  * @i: number
  * Return: charecter.
