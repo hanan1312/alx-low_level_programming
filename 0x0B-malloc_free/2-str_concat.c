@@ -14,7 +14,7 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i = 0, j = 0, l1 = 0, l2 = 0;
 
 	while (s1 && s1[l1])
-		len1++;
+		l1++;
 	while (s2 && s2[l2])
 		l2++;
 
