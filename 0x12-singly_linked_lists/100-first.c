@@ -1,7 +1,7 @@
-
+#include <stdio.h>
 #include "lists.h"
 /**
- * start - start
+ * start - starting function before main
  * Return: nothing.
  */
 void start(void) __attribute__ ((constructor));
