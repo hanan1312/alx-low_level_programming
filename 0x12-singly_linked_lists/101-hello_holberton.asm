@@ -1,6 +1,6 @@
 extern printf
 
-section .text
+SECTION .text
 global main
 
 main:
@@ -16,6 +16,6 @@ pop rbp
 mov rax, 0
 ret
 
-section .data
+SECTION  .data
 msg: db "Hello, Holberton", 0
 fmt: db "%s", 10, 0
