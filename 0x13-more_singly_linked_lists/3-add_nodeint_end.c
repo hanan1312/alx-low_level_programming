@@ -18,7 +18,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 
   /* Set the data of the new node */
-	new_node->data = n;
+	new_node->n = n;
 
   /* Initialize the next pointer of the new node */
 	new_node->next = NULL;
@@ -29,9 +29,9 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (new_node);
 	}
   /* Otherwise, find the last node and add the new node after it */
-	while (last_node->next != NULL) {
+	while (last_node->next != NULL)
 		last_node = last_node->next;
-	}
+
 	last_node->next = new_node;
-	return new_node;
+	return (new_node);
 }
