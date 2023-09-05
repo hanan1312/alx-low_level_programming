@@ -5,7 +5,7 @@
  * @file: string.
  * Return: A pointer.
  */
-char *create_buffer(char *file)
+char *buffer_file(char *file)
 {
 char *buffer;
 
@@ -23,7 +23,7 @@ return (buffer);
  * @fd: A file.
  */
 
-void close_file(int fd)
+void close_fn(int fd)
 {
 int c;
 
@@ -53,7 +53,7 @@ dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
 }
 
-buffer = create_buffer(argv[2]);
+buffer = buffer_file(argv[2]);
 from = open(argv[1], O_RDONLY);
 r = read(from, buffer, 1024);
 to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
@@ -80,8 +80,8 @@ to = open(argv[2], O_WRONLY | O_APPEND);
 } while (r > 0);
 
 free(buffer);
-close_file(from);
-close_file(to);
+close_fn(from);
+close_fn(to);
 
 return (0);
 }
