@@ -18,6 +18,10 @@ dprintf(STDERR_FILENO,"Error: Can't write to %s\n", file);exit(99);
 
 return (buffer);
 }
+/**
+ * close_file - Closes file descriptors.
+ * @fd: A file.
+ */
 
 void close_file(int fd)
 {
