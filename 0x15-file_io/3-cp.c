@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create_buffer - Allocates 1024 bytes for a buffer.
+ * buffer_file - gets 1024 bytes for the buffer.
  * @file: string.
  * Return: A pointer.
  */
@@ -19,7 +19,7 @@ dprintf(STDERR_FILENO,"Error: Can't write to %s\n", file);exit(99);
 return (buffer);
 }
 /**
- * close_file - Closes file descriptors.
+ * close_fn - Closes file.
  * @fd: A file.
  */
 
@@ -37,12 +37,12 @@ exit(100);
 }
 
 /**
- * main - Copies the contents of a file to another file.
+ * program - Copies the contents of a file to another file.
  * @argc: number.
  * @argv: array
  * Return: 0
  */
-int main(int argc, char *argv[])
+int program(int argc, char *argv[])
 {
 int from, to, r, w;
 char *buffer;
