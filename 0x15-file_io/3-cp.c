@@ -37,12 +37,12 @@ exit(100);
 }
 
 /**
- * program - Copies the contents of a file to another file.
+ * main - Copies the contents of a file to another file.
  * @argc: number.
  * @argv: array
  * Return: 0
  */
-int program(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int from, to, r, w;
 char *buffer;
